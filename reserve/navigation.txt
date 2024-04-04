@@ -1,0 +1,21 @@
+<!--                            <li class=" menu__item --><?php //= $page ? '' : 'menu__item--current'?><!--"><a class="menu__link" href="index.php">Home <span class="sr-only">(current)</span></a></li>-->
+<!--                            <li class="dropdown menu__item --><?php //= $page && $page == "shop" ? 'menu__item--current' : ''?><!--">-->
+<!--                                <a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop <span class="caret"></span></a>-->
+<!--                                <ul class="dropdown-menu p-5">-->
+<!--                                    <div class="agile_inner_drop_nav_info">-->
+<!--                                        <div class="col-sm-3">-->
+<!--                                            <ul class="multi-column-dropdown">-->
+<!--                                                <li><a href="index.php?page=shop&category=clothing">Clothing</a></li>-->
+<!--                                                <li><a href="index.php?page=shop&category=watches">Watches</a></li>-->
+<!--                                                <li><a href="index.php?page=shop&category=footwear">Footwear</a></li>-->
+<!--                                                <li><a href="index.php?page=shop&category=bags">Bags</a></li>-->
+<!--                                            </ul>-->
+<!--                                        </div>-->
+<!--                                        <div class="clearfix"></div>-->
+<!--                                    </div>-->
+<!--                                </ul>-->
+<!--                            </li>-->
+<!--                            <li class=" menu__item --><?php //= $page && $page == "about" ? 'menu__item--current' : ''?><!--"><a class="menu__link" href="index.php?page=about">About</a></li>-->
+<!--                            <li class=" menu__item --><?php //= $page && $page == "profile" ? 'menu__item--current' : ''?><!--"><a class="menu__link mb-special-link" href="index.php?page=profile">Your profile</a></li>-->
+<!--                            <li class=" menu__item --><?php //= $page && $page == "admin_panel" ? 'menu__item--current' : ''?><!--"><a class="menu__link mb-special-link" href="index.php?page=admin_panel">Admin panel</a></li> <!--<i class="fa-solid fa-wrench"></i>-->-->
+<!--                            <li class=" menu__item --><?php //= $page && $page == "contact" ? 'menu__item--current' : ''?><!--"><a class="menu__link" href="index.php?page=contact">Contact</a></li>-->

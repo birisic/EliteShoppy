@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /css/
+Disallow: /.idea/
+Disallow: /images/
+Disallow: /config/
+Disallow: /js/
+Disallow: /models/
+Disallow: /views/
+Disallow: /reserve/
+Disallow: /fonts/
+Disallow: /documentation.pdf/

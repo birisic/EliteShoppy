@@ -1,0 +1,85 @@
+<thead>
+                <tr>
+                    <?php
+                        foreach (get_object_vars($article) as $property => $value) {
+                            if($property == "id"){
+                                echo "<th scope='col'></th>";
+                            }
+                            else echo "<th scope='col'>$property</th>";
+                        }
+                        echo "<th scope='col'>Modify</th>";
+                        echo "<th scope='col'>Delete</th>";
+                    ?>
+                </tr>
+                </thead>
+                <tbody>
+                    <?php
+                        $br = 1;
+                        foreach ($articles as $objArticle):
+                            $desc = $objArticle->description;
+
+                            if(strlen($desc) > 100){
+                                $format = substr($desc, 0, 150);
+                                $format .= "...";
+                            }
+                            else{
+                                $format = $desc;
+                            }
+                    ?>
+                    <tr>
+                        <td><?= $br ?></td>
+                        <td><?= $objArticle->IDarticle ?></td>
+                        <td><?= $objArticle->IDgender ?></td>
+                        <td>$<?= $objArticle->priceNew ?></td>
+                        <td>$<?= $objArticle->priceOld ?></td>
+                        <td><?= $format ?></td>
+                        <td><img width="100px" height="100px" src="images/<?= $objArticle->image ?>" alt="alt"/></td>
+                        <td>
+                            <button class="btn btn-warning" data-id="<?=$objArticle->id?>">
+                                <span>Edit</span>
+                            </button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" data-id="<?=$objArticle->id?>">
+                                <span>Delete</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <?php $br++; endforeach;?>
+<!--                <tr>-->
+<!--                    <th scope="row">1</th>-->
+<!--                    <td>Mark</td>-->
+<!--                    <td>Otto</td>-->
+<!--                    <td>@mdo</td>-->
+<!--                    <td>Otto</td>-->
+<!--                    <td>@mdo</td>-->
+<!--                    <td>Otto</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <th scope="row">2</th>-->
+<!--                    <td>Jacob</td>-->
+<!--                    <td>Thornton</td>-->
+<!--                    <td>@fat</td>-->
+<!--                    <td>Otto</td>-->
+<!--                    <td>@mdo</td>-->
+<!--                    <td>Otto</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <th scope="row">3</th>-->
+<!--                    <td>Larry</td>-->
+<!--                    <td>the Bird</td>-->
+<!--                    <td>@twitter</td>-->
+<!--                    <td>Otto</td>-->
+<!--                    <td>@mdo</td>-->
+<!--                    <td>Otto</td>-->
+<!--                </tr>-->
+<!--                <tr>-->
+<!--                    <th scope="row">3</th>-->
+<!--                    <td>Larry</td>-->
+<!--                    <td>the Bird</td>-->
+<!--                    <td>@twitter</td>-->
+<!--                    <td>Otto</td>-->
+<!--                    <td>@mdo</td>-->
+<!--                    <td>Otto</td>-->
+<!--                </tr>-->
+                </tbody>
